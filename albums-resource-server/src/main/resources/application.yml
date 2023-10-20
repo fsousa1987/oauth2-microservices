@@ -2,8 +2,15 @@ server:
   port: 8091
 
 spring:
+  application:
+    name: albums-resource-server
   security:
     oauth2:
       resource-server:
         jwt:
           jwk-set-uri: http://localhost:8890/realms/appsdeveloperblog/protocol/openid-connect/certs
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8010/eureka
