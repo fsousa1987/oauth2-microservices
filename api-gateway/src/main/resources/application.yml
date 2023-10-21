@@ -9,7 +9,7 @@ spring:
       routes:
         - id: users-status-check
           uri:
-            http://localhost:8081
+            lb://demo-resource-server
           predicates:
             - Path=/users/status/check
             - Method=GET
@@ -17,7 +17,7 @@ spring:
             - RemoveRequestHeader=Cookie
         - id: albums
           uri:
-            http://localhost:8091
+            lb://albums-resource-server
           predicates:
             - Path=/albums
             - Method=GET
@@ -25,7 +25,7 @@ spring:
             - RemoveRequestHeader=Cookie
         - id: photos
           uri:
-            http://localhost:8090
+            lb://photos-resource-server
           predicates:
             - Path=/photos
             - Method=GET
