@@ -8,7 +8,7 @@ spring:
         registration:
           mywebclient:
             client-id: photo-app-webclient
-            client-secret: 3717f1b4-654b-412a-b617-bdd2ef6fd221
+            client-secret: S9trEChydhzupUuRsQRmfLOX30vg2t4E
             scope:
               - openid
               - profile
