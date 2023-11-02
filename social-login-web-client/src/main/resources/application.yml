@@ -3,6 +3,14 @@ spring:
     oauth2:
       client:
         registration:
-          facebook:
+          #          facebook:
+          #          google:
+          okta:
             client-id:
             client-secret:
+            scope:
+              - openid
+              - profile
+        provider:
+          okta:
+            issuer-uri:
